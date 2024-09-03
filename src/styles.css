@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+/* Dış konteyner stilini ekleyelim */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Yüksekliği ekranın tamamını kapsayacak */
+  background-color: #f0f0f0; /* Arka plan rengi */
+}
+
+/* Genel form stili */
+form {
+  max-width: 600px;
+  width: 100%; /* Küçük ekranlarda tam genişlikte olsun */
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form alanlarının genel stili */
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Fieldset ve legend stili */
+fieldset {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Submit butonunun stili */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tasarım için media query */
+@media (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
